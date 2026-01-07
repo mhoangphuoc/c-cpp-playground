@@ -66,4 +66,37 @@ Makefile.win
 build/
 dist/
 
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+bin/
+obj/
+
+# MSVC cache / temp
+*.cache
+*.log
+*.tlog
+*.lastbuildstate
+
+# CMake (if used)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+
+# Test
+TestResults/
+*.trx
+
 
