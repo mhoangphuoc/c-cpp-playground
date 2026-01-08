@@ -1,4 +1,4 @@
-// Section 1: Library Include | Header Files
+// Section 1: Library Includes | Header Files
 #include <stdio.h>
 
 // Section 2: Variables/Constants Declaration
