@@ -14,7 +14,7 @@ int main()
   scanf("%lf", &exponent);
   printf("| %.2f raised to the power of %.2f is %.2f", base, exponent, pow(base, exponent));
 
-  printf("\n\n- Square root");
+  printf("\n\n- Square root & Cube root");
   double a;
   printf("\nEnter the value for a: ");
   scanf("%lf", &a);
@@ -22,23 +22,19 @@ int main()
   printf("\n| The cube root of %.2f is %.2f", a, cbrt(a));
 
   printf("\n\n- Absolute value");
-  float b;
+  double b;
   printf("\nEnter the real value for b: ");
-  scanf("%f", &b);
-  printf("| The absolute value of %.2f is %.2f", b, abs(b));
+  scanf("%lf", &b);
+  printf("| The absolute value of %.2f is %.2f", b, fabs(b));
+
+  printf("\n\n- Rounding and number decomposition");
   double c;
   printf("\nEnter the real value for c: ");
   scanf("%lf", &c);
-  printf("| The absolute value of %.2f is %.2f", c, fabs(c));
-
-  printf("\n\n- Rounding and number decomposition");
-  double d;
-  printf("\nEnter the real value for d: ");
-  scanf("%lf", &d);
-  printf("| Round up: d = %d", (int)ceil(d));
-  printf("\n| Round down: d = %d", (int)floor(d));
-  printf("\n| Round to the nearest: d = %d", (int)round(d));
-  printf("\n| Truncate the fractional part: d = %d", (int)trunc(d));
+  printf("| Round up: c = %d", (int)ceil(c));
+  printf("\n| Round down: c = %d", (int)floor(c));
+  printf("\n| Round to the nearest: c = %d", (int)round(c));
+  printf("\n| Truncate the fractional part: c = %d", (int)trunc(c));
 
   printf("\n\n- Value comparison");
   double x, y, z, t, u;
