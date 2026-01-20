@@ -1,8 +1,11 @@
+// Iteration/Loop - For Statement
 #include <stdio.h>
 int main()
 {
+   // Declare variable
    int a, b;
 
+   // Input
    printf("Enter the integer value for a: ");
    if (scanf("%d", &a) != 1)
    {
@@ -16,6 +19,7 @@ int main()
       return 0;
    }
 
+   // Perform
    if (a == b)
    {
       printf("Try another value for a or b!");
