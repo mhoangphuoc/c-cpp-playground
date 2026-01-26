@@ -1,6 +1,6 @@
-// 01 - Exercise 4: Sum, Difference, Product, and Quotient
+// 01 - 04: CÁC PHÉP TOÁN CƠ BẢN
 #include <stdio.h>
-// Main variable
+// Main function
 int main()
 {
    // Variable declarations
