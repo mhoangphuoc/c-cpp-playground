@@ -9,6 +9,6 @@ int main() {
     if (c >= 'A' && c <= 'Z')   printf("YES");
     else                        printf("NO");
     // METHOD 2:
-    printf("%s", isupper(c) ? "YES" : "NO");
+    printf("%s", isupper((unsigned char)c) ? "YES" : "NO");
     return 0;
 }

@@ -12,6 +12,6 @@ int main() {
     if (c >= 'a' && c <= 'z') printf("YES");
     else printf("NO");
     // METHOD 2:
-    printf("%s", islower(c) ? "\nYES" : "\nNO");
+    printf("%s", islower((unsigned char)c) ? "\nYES" : "\nNO");
     return 0;
 }

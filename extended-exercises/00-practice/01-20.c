@@ -13,6 +13,6 @@ int main() {
         printf("YES");
     else printf("NO");
     // METHOD 2:
-    printf("%s", (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ? "\nYES" : "\nNO");
+    printf("%s", islower((unsigned char)c) || isupper((unsigned char)c) ? "\nYES" : "\nNO");
     return 0;
 }
