@@ -1,13 +1,17 @@
-/* Exercise 30: *Division Check*
-
-### Problem:
-Given three 64-bit integers $a, b,$ and $c$. Determine if any of the following conditions are met:
-- $a / b = c$ (where $a$ is divisible by $b$)
-- $b / c = a$ (where $b$ is divisible by $c$)
-- $c / a = b$ (where $c$ is divisible by $a$)
-
-### Input:
-Three 64-bit integers $a, b, c$ $(-10^{18} \le a, b, c \le 10^{18})$.
-
-### Output:
-Print `/` if at least one condition is satisfied, otherwise print `NOSOL`. */
+// 01 - 30:  KIỂM TRA PHÉP CHIA
+// HEADER FILES
+#include <stdio.h>
+// MAIN FUNCTION
+int main() {
+    // DECLARATION
+    long long a, b, c;
+    // INPUT
+    scanf("%lld%lld%lld", &a, &b, &c);
+    // PROCESSING
+    // OUTPUT
+    if (b != 0 && a%b == 0 && a/b == c) printf("/");
+    else if (c != 0 && b%c == 0 && b/c == a) printf("/");
+    else if (a != 0 && c%a == 0 && c/a == b) printf("/");
+    else printf("NOSOL");
+    return 0;
+}
